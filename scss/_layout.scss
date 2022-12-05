@@ -46,6 +46,32 @@
         &:nth-child(3) {background-color: #ee9153;}
         &:nth-child(4) {background-color: #6ace77;}
     }
+    //intro 영역
+    .intro {
+        display: flex; justify-content: center;
+        .center {
+            width: 80%;
+            .text_ani_box {
+                display: flex; justify-content: center;
+                svg {
+                    fill: none;
+                    width: 500px;
+                    stroke-width: 4px;
+                }
+                path {
+                    stroke: #6d1010;
+                    stroke-dasharray: 779.64;
+                    stroke-dashoffset: 779.64;
+                    animation: path 6s forwards;
+                }
+        
+                @keyframes path {
+                    50% {stroke-dashoffset: 0; }
+                    100% {stroke-dashoffset: 0; fill: #ad6565;}
+                }
+            }
+        }
+    }
     //explain 영역
     .explain {
         .pf {
