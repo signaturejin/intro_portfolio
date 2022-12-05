@@ -1,33 +1,42 @@
-if(scTop >= sections[0] && scTop < sections[1]){
-    gnb.forEach((item,index)=>{
+window.addEventListener("scroll",()=>{
+
+    //스크롤바 시작값 변수에 대입
+    let scTop = window.scrollY;
+
+    if(scTop >= secStart[0] && scTop < secStart[1]){
+       
         //활성화 전 전부 비활성화
         gnb.forEach((item,index)=>{
             item.classList.remove("on");
         });
-        item.classList.add("on");
-    });
-    // gnb_color();    
-}
-else if(scTop >= sections[1] && scTop < sections[2]){
-    gnb.forEach((item,index)=>{
+        gnb[0].classList.add("on");
+        // gnb_color();    
+    }
+    else if(scTop >= secStart[1] && scTop < secStart[2]){
         //활성화 전 전부 비활성화
         gnb.forEach((item,index)=>{
             item.classList.remove("on");
         });
-        item.classList.add("on");
-    });
-    // gnb_color();
-}
-else if(scTop >= sections[2] && scTop < sections[3]){
-    gnb.forEach((item,index)=>{
+        gnb[1].classList.add("on");
+        // gnb_color();
+    }
+    else if(scTop >= secStart[2] && scTop < secStart[3]){
         //활성화 전 전부 비활성화
         gnb.forEach((item,index)=>{
             item.classList.remove("on");
         });
-        item.classList.add("on");
-    });
-    // gnb_color();
-}
+        gnb[2].classList.add("on");
+        // gnb_color();
+    }
+    else if(scTop >= secStart[3]){
+        //활성화 전 전부 비활성화
+        gnb.forEach((item,index)=>{
+            item.classList.remove("on");
+        });
+        gnb[3].classList.add("on");
+    }
+});
+
 
 
 

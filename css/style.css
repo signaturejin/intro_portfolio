@@ -34,6 +34,7 @@ body {
   border-radius: 50px;
   background-color: skyblue;
   transition: all 0.3s;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 #header .center .gnb {
   display: flex;
@@ -46,11 +47,12 @@ body {
 }
 #header .center .gnb li a {
   color: #000;
+  transition: all 0.3s;
 }
 #header .center .gnb li.on a {
   color: #552404;
   background-color: #ee9153;
-  width: 70px;
+  width: 100px;
   line-height: 40px;
   border-radius: 30px;
   text-align: center;
