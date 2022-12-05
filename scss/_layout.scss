@@ -3,6 +3,7 @@
     width: 100%;
     display: flex; justify-content: center;
     position: absolute; left: 0; bottom: 0;
+    z-index: 99;
     .center {
         width: 500px; border-radius: 50px;
         background-color: skyblue;
@@ -13,9 +14,7 @@
             li {
                 line-height: 85px; margin: 0 20px;
                 font-size: 16px;
-                a {
-                    color: #000; transition: all 0.3s;
-                }
+                a {color: #000; transition: all 0.3s;}
             }
             li.on {
                 a {
@@ -36,17 +35,39 @@
 }
 //중간 영역
 #container {
-    overflow: auto;
+    // overflow: auto;
     scroll-snap-type: y mandatory;
     .section {
         scroll-snap-align: start;
         width: 100%;
         // height: 1080px;
-        height: 100vh;
         &:nth-child(1) {background-color: #f86969; height: 96vh;}
         &:nth-child(2) {background-color: #7481fc;}
         &:nth-child(3) {background-color: #ee9153;}
         &:nth-child(4) {background-color: #6ace77;}
+    }
+    //explain 영역
+    .explain {
+        .pf {
+            display: flex; align-items: center;
+            overflow: hidden;
+            &:nth-child(1) {background-color: #ffefef; height: 100vh;}
+            &:nth-child(2) {background-color: #f1f2ff;}
+            &:nth-child(3) {background-color: #fffaf6;}
+            > div {width: 50%;}
+            .left {
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    // animation: move 3s linear infinite;
+                    // @keyframes move {
+                    //     0% {transform: translateX(0);}
+                    //     100% {transform: translateX(-50%);}
+                    // }
+                }
+            }
+            // .right {}
+        }
     }
 }
 //하단 영역

@@ -28,6 +28,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
+  z-index: 99;
 }
 #header .center {
   width: 500px;
@@ -71,13 +72,11 @@ body {
 }
 
 #container {
-  overflow: auto;
   scroll-snap-type: y mandatory;
 }
 #container .section {
   scroll-snap-align: start;
   width: 100%;
-  height: 100vh;
 }
 #container .section:nth-child(1) {
   background-color: #f86969;
@@ -91,6 +90,30 @@ body {
 }
 #container .section:nth-child(4) {
   background-color: #6ace77;
+}
+#container .explain .pf {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+#container .explain .pf:nth-child(1) {
+  background-color: #ffefef;
+  height: 100vh;
+}
+#container .explain .pf:nth-child(2) {
+  background-color: #f1f2ff;
+}
+#container .explain .pf:nth-child(3) {
+  background-color: #fffaf6;
+}
+#container .explain .pf > div {
+  width: 50%;
+}
+#container .explain .pf .left {
+  overflow: hidden;
+}
+#container .explain .pf .left img {
+  width: 100%;
 }
 
 #footer {
