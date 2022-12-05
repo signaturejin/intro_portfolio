@@ -40,6 +40,7 @@
                 </div>
                 <div class="text_box">
                     <p class="text">안녕하세요.</p>
+                    <p class="text">성장중인</p>
                     <p class="text">신입 웹퍼블리셔</p>
                     <p class="text">허유진 입니다.</p>
                 </div>
@@ -48,42 +49,53 @@
         <!-- 자기소개 -->
         <div class="about_me section">
             <div class="center">
-                자기소개 영역입니다.
                 <h2 class="title">ABOUT ME</h2>
                 <!-- 기본사항 -->
                 <div class="info">
+                    <h3 class="sub_title"><i class="fa-solid fa-bookmark"></i>프로필</h3>
                     <p class="name">허유진</p>
                     <p class="brith">1999.10.27</p>
-
+                    <p class="address">경기도 고양시 일산동구</p>
+                    <p class="tell">010.9866.4543</p>
                 </div>
-                <!-- 학력 -->
-                <div>
-                    <p>서영대학교 파주캠퍼스 유아교육과</p>
-                    <p>한국방송통신대학교 컴퓨터과학과(졸업예정)</p>
-                </div>
-                <!-- 경력 -->
-                <div>
-                    <p>CU 식사태하점 2018.01.07 ~ 2019.06.23</p>
-                    <P>CU 일산에듀포레점 2019.09.14 ~ 2020.05.09</P>
-                    <P>CU 강선8단지점 2020.03.21 ~ 2020.10.18</P>
-                    <P>GS25 고양산두로점 2020.03.21 ~ 2022.06.26</P>
-                </div>
-                <!-- 자격증 -->
-                <div class="license">
-                    <p>유치원정교사2급</p>
-                    <p>보육교사2급</p>
-                    <p>동화구연지도사</p>
-                    <p>GTQ 포토샵 1급</p>
-                    <p>GTQ 일러스트 1급</p>
-                    <P>운전면허 2종 보통</P>
-                </div>
-                <!-- 보유스킬 -->
-                <div class="skill">
-                    <p>Html</p>
-                    <p>Css/Scss</p>
-                    <p>Javascript</p>
-                    <p>Ejs</p>
-                    <p>Node.js</p>
+                <div class="wrap">
+                    <div class="left">
+                        <!-- 학력 -->
+                        <div>
+                            <h3 class="sub_title"><i class="fa-solid fa-bookmark"></i>학력</h3>
+                            <p>서영대학교 파주캠퍼스 유아교육과</p>
+                            <p>한국방송통신대학교 컴퓨터과학과(졸업예정)</p>
+                        </div>
+                        <!-- 경력 -->
+                        <div>
+                            <h3 class="sub_title"><i class="fa-solid fa-bookmark"></i>경력</h3>
+                            <p>CU 식사태하점 2018.01.07 ~ 2019.06.23</p>
+                            <P>CU 일산에듀포레점 2019.09.14 ~ 2020.05.09</P>
+                            <P>CU 강선8단지점 2020.03.21 ~ 2020.10.18</P>
+                            <P>GS25 고양산두로점 2020.03.21 ~ 2022.06.26</P>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <!-- 자격증 -->
+                        <div class="license">
+                            <h3 class="sub_title"><i class="fa-solid fa-bookmark"></i>자격증</h3>
+                            <p>유치원정교사2급</p>
+                            <p>보육교사2급</p>
+                            <p>동화구연지도사</p>
+                            <p>GTQ 포토샵 1급</p>
+                            <p>GTQ 일러스트 1급</p>
+                            <P>운전면허 2종 보통</P>
+                        </div>
+                        <!-- 보유스킬 -->
+                        <div class="skill">
+                            <h3 class="sub_title"><i class="fa-solid fa-bookmark"></i>보유스킬</h3>
+                            <p>Html</p>
+                            <p>Css/Scss</p>
+                            <p>Javascript</p>
+                            <p>Ejs</p>
+                            <p>Node.js</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,30 +116,38 @@
                 <!-- 다음 포폴 작업도 이전 포폴 설명 다 끝난다음 나오도록하기 -->
                 <div class="right">
                     <!-- 레이아웃 정하고 정리 -->
-                    <p class="context">
-                        사이트이름 : 동글투어<br>
-                        이름선정이유 : 지구는 동그라미 모양이기 때문에 지구 곳곳의 지역들을 여행할 수 있다는 의미로 동글투어라는 이름을 선정했습니다.<br>
-                        컨셉 : 여행사이트<br>
-                        참고사이트 : 하나투어 / 모두투어<br>
-                        사용한 기술 : html / scss / javascript / ejs / node.js<br>
-
-                        ● header / footer<br>
-                        - ejs를 활용하여 header와 footer를 개별파일로 만들어 각 페이지마다 include 하였습니다.<br>
-
-                        ● 페이지열람<br>
-                        기본적으로 로그인을 하지 않은 사이트 이용자 모두 페이지를 볼 수 있습니다.<br>
-                        다만, 커뮤니티 페이지는 로그인을 해야 페이지 열람이 가능합니다.<br>
-
-                        ● 회원가입 기능<br>
-                        - 정규표현식을 사용하여 각 인풋란에 따라 규칙을 다르게 정하였습니다.<br>
-                        - 인풋태그에 공백란이 하나라도 있으면 회원가입이 불가합니다.<br>
-                        - 형식에 맞지 않게 작성한 후 가입하기 버튼을 눌렀을 경우 경고창이 뜨도록 하였습니다.<br>
-                        
-                        ● 게시판 기능<br>
-                        - 사이트 회원만 커뮤니티 페이지에서 글쓰기가 가능합니다.(파일첨부O)<br>
-                        - 자신이 작성한 게시글은 수정 및 삭제가 가능합니다.<br>
-                        - 원하는 사람의 게시물에 댓글을 남길 수 있습니다.<br>
-                    </p>
+                    <div class="context">
+                        <div class="info info1">
+                            <p>사이트이름 : 동글투어</p>
+                            <p>이름선정이유 : 지구는 동그라미 모양이기 때문에 지구 곳곳의 지역들을 여행할 수 있다는 의미로 동글투어라는 이름을 선정했습니다.</p>
+                            <p>컨셉 : 여행사이트</p>
+                            <p>참고사이트 : 하나투어 / 모두투어</p>
+                            <p>사용한 기술 : html / scss / javascript / ejs / node.js</p>
+                        </div>
+                        <div class="info info2">
+                            <div class="wrap">
+                                <p><i class="fa-solid fa-bookmark"></i>header / footer</p>
+                                <p>- ejs를 활용하여 header와 footer를 개별파일로 만들어 각 페이지마다 include 하였습니다.</p>
+                            </div>
+                            <div class="wrap">
+                                <p><i class="fa-solid fa-bookmark"></i>페이지열람</p>
+                                <p>- 기본적으로 로그인을 하지 않은 사이트 이용자 모두 페이지를 볼 수 있습니다.</p>
+                                <p>- 다만, 커뮤니티 페이지는 로그인을 해야 페이지 열람이 가능합니다.</p>
+                            </div>
+                            <div class="wrap">
+                                <p><i class="fa-solid fa-bookmark"></i>회원가입 기능</p>
+                                <p>- 정규표현식을 사용하여 각 인풋란에 따라 규칙을 다르게 정하였습니다.</p>
+                                <p>- 인풋태그에 공백란이 하나라도 있으면 회원가입이 불가합니다.</p>
+                                <p>- 형식에 맞지 않게 작성한 후 가입하기 버튼을 눌렀을 경우 경고창이 뜨도록 하였습니다.</p>
+                            </div>
+                            <div class="wrap">
+                                <p><i class="fa-solid fa-bookmark"></i>게시판 기능</p>
+                                <p>- 사이트 회원만 커뮤니티 페이지에서 글쓰기가 가능합니다.(파일첨부O)</p>
+                                <p>- 자신이 작성한 게시글은 수정 및 삭제가 가능합니다.</p>
+                                <p>- 원하는 사람의 게시물에 댓글을 남길 수 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="pf pf2">

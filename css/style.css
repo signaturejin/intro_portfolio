@@ -71,12 +71,7 @@ body {
   border-radius: 0;
 }
 
-#container {
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-}
 #container .section {
-  scroll-snap-align: start;
   width: 100%;
 }
 #container .section:nth-child(1) {
@@ -102,10 +97,11 @@ body {
 #container .intro .center .text_ani_box {
   display: flex;
   justify-content: center;
+  padding-top: 160px;
 }
 #container .intro .center .text_ani_box svg {
   fill: none;
-  width: 500px;
+  width: 700px;
   stroke-width: 4px;
 }
 #container .intro .center .text_ani_box path {
@@ -132,6 +128,22 @@ body {
     stroke-dashoffset: 0;
     fill: #ad6565;
   }
+}
+#container .about_me {
+  display: flex;
+  justify-content: center;
+}
+#container .about_me .center {
+  width: 80%;
+}
+#container .about_me .center .info {
+  border-bottom: 1px solid #c2c2c2;
+}
+#container .about_me .center .wrap {
+  display: flex;
+}
+#container .about_me .center .wrap > div {
+  width: 50%;
 }
 #container .explain .pf {
   display: flex;
