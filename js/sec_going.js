@@ -9,7 +9,7 @@ gnb.forEach((item,index)=>{
 
         window.scrollTo(
             {
-                top: secStart[index] - 85,
+                top: secStart[index] /*- 83*/,
                 behavior: "smooth"
             }
         );
