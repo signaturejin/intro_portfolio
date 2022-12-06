@@ -33,7 +33,7 @@ body {
 #header .center {
   width: 500px;
   border-radius: 50px;
-  background-color: #f35d5d;
+  background-color: #ffa1a1;
   transition: all 0.3s;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -52,7 +52,7 @@ body {
 }
 #header .center .gnb li.on a {
   color: #552404;
-  background-color: #ee9153;
+  background-color: #ffffff;
   width: 100px;
   line-height: 40px;
   border-radius: 30px;
@@ -125,15 +125,17 @@ body {
 #container .about_me {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-top: 1px solid #e05e6f;
+  height: 100vh;
 }
 #container .about_me .center {
   width: 80%;
   padding-bottom: 160px;
 }
 #container .about_me .center .title {
-  padding: 170px 0 25px;
-  font-size: 14px;
+  padding: 60px 0 80px;
+  font-size: 20px;
   color: #f35d5d;
 }
 #container .about_me .center > div {
@@ -142,7 +144,7 @@ body {
 }
 #container .about_me .center > div .sub_title {
   font-size: 15px;
-  padding: 45px 0 10px;
+  padding: 75px 0 10px;
 }
 #container .about_me .center > div .sub_title i {
   margin-right: 5px;
@@ -156,7 +158,7 @@ body {
 }
 #container .about_me .center .info {
   border-bottom: 1px solid #e05e6f;
-  padding-bottom: 30px;
+  padding-bottom: 55px;
 }
 #container .about_me .center .bottom {
   display: flex;
@@ -179,6 +181,9 @@ body {
 #container .about_me .center .bottom .wrap .right {
   width: 50%;
 }
+#container .portfolio {
+  padding-top: 85px;
+}
 #container .portfolio .pf {
   display: flex;
   overflow: hidden;
@@ -190,9 +195,37 @@ body {
 }
 #container .portfolio .pf .left {
   overflow: hidden;
+  position: relative;
 }
-#container .portfolio .pf .left img {
+#container .portfolio .pf .left a img {
   width: 100%;
+}
+#container .portfolio .pf .left .hover_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  transition: all 0.5s;
+  opacity: 0;
+}
+#container .portfolio .pf .left .hover_bg a {
+  color: #fff;
+  font-size: 22px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#container .portfolio .pf .left .hover_bg a p {
+  margin-top: 20px;
+}
+#container .portfolio .pf .left:hover .hover_bg {
+  opacity: 1;
 }
 #container .portfolio .pf .right {
   padding: 0 60px;
@@ -201,9 +234,20 @@ body {
   align-items: center;
 }
 #container .portfolio .pf .right .context .title {
-  padding: 0 0 30px;
-  font-size: 14px;
+  padding: 0 0 20px;
+  font-size: 20px;
   color: #f35d5d;
+}
+#container .portfolio .pf .right .context .link {
+  display: block;
+  color: #f35d5d;
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+#container .portfolio .pf .right .context .link i {
+  margin-right: 3px;
+  font-size: 14px;
 }
 #container .portfolio .pf .right .context .info1 {
   padding-bottom: 30px;
@@ -249,21 +293,22 @@ body {
 }
 #footer .center {
   width: 80%;
-  padding: 30px 0;
+  padding: 100px 0;
 }
 #footer .center .f_top {
   display: flex;
-  padding-bottom: 20px;
 }
 #footer .center .f_top > div {
   width: 50%;
   font-weight: 500;
+  font-size: 20px;
 }
 #footer .center .f_top > div .sub_title {
   font-weight: normal;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 #footer .center .f_bot {
+  padding-top: 100px;
   font-size: 30px;
   font-weight: 500;
 }
