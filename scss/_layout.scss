@@ -22,7 +22,7 @@
                     background-color: #ffffff;
                     width: 100px; line-height: 40px;
                     border-radius: 30px; text-align: center;
-                    display: inline-block;
+                    display: inline-block; font-weight: 500;
                 }
             }
         }
@@ -41,6 +41,8 @@
         align-items: center;
         height: 96vh;
         position: relative;
+        background-color: #ca5656;
+        //배경 고민중
         .bg {
             position: absolute; left: 0; top: 0;
             width: 100%; height: 100%;
@@ -49,8 +51,14 @@
             .black {
                 position: absolute; left: 0; top: 0;
                 width: 100%; height: 100%;
-                background-color: rgba(0,0,0,.7);
+                background-color: rgba(0,0,0,.5);
             }
+        }
+        .border {
+            position: absolute; left: 50%; top: 50%;
+            transform: translate(-50%,-50%);
+            width: 90%; height: 80%;
+            border: 5px solid #fff;
         }
         .center {
             width: 80%;
@@ -88,7 +96,21 @@
                 p {
                     font-size: 23px; line-height: 40px;
                     font-weight: 500; color: #fff;
-                    span {color: #f35d5d;}
+                    .line {
+                        // color: #f35d5d;
+                        position: relative;
+                        &::before {
+                            content: ''; width: 108%; height: 76%;
+                            display: inline-block;
+                            position: absolute; left: -2px; top: 5px;
+                            background-color: #ffd3d3;
+                            z-index: 1; border-radius: 5px;
+                        }
+                        > span {
+                            color: #642a2a; z-index: 2; position: relative;
+                            font-weight: 600;
+                        }
+                    }
                 }
             }
         }

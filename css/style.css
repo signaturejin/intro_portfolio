@@ -58,6 +58,7 @@ body {
   border-radius: 30px;
   text-align: center;
   display: inline-block;
+  font-weight: 500;
 }
 
 #header.fixed {
@@ -77,6 +78,7 @@ body {
   align-items: center;
   height: 96vh;
   position: relative;
+  background-color: #ca5656;
 }
 #container .intro .bg {
   position: absolute;
@@ -96,7 +98,16 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#container .intro .border {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 80%;
+  border: 5px solid #fff;
 }
 #container .intro .center {
   width: 80%;
@@ -115,20 +126,9 @@ body {
   stroke: #fff;
   stroke-dasharray: 779.64;
   stroke-dashoffset: 779.64;
-  -webkit-animation: path 5s forwards 0.7s;
-          animation: path 5s forwards 0.7s;
+  animation: path 5s forwards 0.7s;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-@-webkit-keyframes path {
-  50% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: #fff;
-    opacity: 0.9;
-  }
 }
 @keyframes path {
   50% {
@@ -150,8 +150,26 @@ body {
   font-weight: 500;
   color: #fff;
 }
-#container .intro .center .text_box p span {
-  color: #f35d5d;
+#container .intro .center .text_box p .line {
+  position: relative;
+}
+#container .intro .center .text_box p .line::before {
+  content: "";
+  width: 108%;
+  height: 76%;
+  display: inline-block;
+  position: absolute;
+  left: -2px;
+  top: 5px;
+  background-color: #ffd3d3;
+  z-index: 1;
+  border-radius: 5px;
+}
+#container .intro .center .text_box p .line > span {
+  color: #642a2a;
+  z-index: 2;
+  position: relative;
+  font-weight: 600;
 }
 #container .about_me {
   display: flex;
