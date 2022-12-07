@@ -33,7 +33,7 @@ body {
 #header .center {
   width: 500px;
   border-radius: 50px;
-  background-color: #ffa1a1;
+  background-color: #4e3431;
   transition: all 0.3s;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -47,12 +47,12 @@ body {
   font-size: 16px;
 }
 #header .center .gnb li a {
-  color: #000;
+  color: #fff;
   transition: all 0.3s;
 }
 #header .center .gnb li.on a {
-  color: #552404;
-  background-color: #ffffff;
+  color: #4e3431;
+  background-color: #fff;
   width: 100px;
   line-height: 40px;
   border-radius: 30px;
@@ -107,7 +107,62 @@ body {
   transform: translate(-50%, -50%);
   width: 90%;
   height: 80%;
-  border: 5px solid #fff;
+}
+#container .intro .border > div {
+  position: absolute;
+  background-color: #fff;
+}
+#container .intro .border > div:nth-child(1), #container .intro .border > div:nth-child(2) {
+  height: 5px;
+  animation-name: border1;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-delay: 3.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes border1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+#container .intro .border > div:nth-child(3), #container .intro .border > div:nth-child(4) {
+  width: 5px;
+  animation-name: border2;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes border2 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+#container .intro .border > div:nth-child(1) {
+  left: 0;
+  top: 0;
+}
+#container .intro .border > div:nth-child(2) {
+  right: 0;
+  bottom: 0;
+}
+#container .intro .border > div:nth-child(3) {
+  left: 0;
+  bottom: 0;
+}
+#container .intro .border > div:nth-child(4) {
+  right: 0;
+  top: 0;
 }
 #container .intro .center {
   width: 80%;
@@ -183,7 +238,7 @@ body {
   padding-bottom: 160px;
 }
 #container .about_me .center .title {
-  padding: 60px 0 80px;
+  padding: 150px 0 80px;
   font-size: 20px;
   color: #f35d5d;
 }
@@ -205,9 +260,13 @@ body {
 #container .about_me .center > div .info_st {
   padding: 0 0 10px;
 }
-#container .about_me .center .info {
+#container .about_me .center .top {
+  display: flex;
   border-bottom: 1px solid #e05e6f;
   padding-bottom: 55px;
+}
+#container .about_me .center .top .info {
+  width: 30%;
 }
 #container .about_me .center .bottom {
   display: flex;
@@ -226,6 +285,9 @@ body {
 }
 #container .about_me .center .bottom .wrap .left {
   width: 50%;
+}
+#container .about_me .center .bottom .wrap .ed_left {
+  width: 65%;
 }
 #container .about_me .center .bottom .wrap .right {
   width: 50%;
@@ -247,6 +309,9 @@ body {
   position: relative;
 }
 #container .portfolio .pf .left a img {
+  width: 100%;
+}
+#container .portfolio .pf .left .move img {
   width: 100%;
 }
 #container .portfolio .pf .left .hover_bg {
@@ -333,12 +398,25 @@ body {
   background-color: #ffcbc9;
   padding: 0 5px;
 }
+#container .portfolio .pf .right .context .info2 .bank i {
+  font-size: 11px;
+  position: relative;
+  bottom: 1px;
+  margin: 0 5px;
+}
 
 #footer {
   width: 100%;
   display: flex;
   justify-content: center;
   border-top: 1px solid #c2c2c2;
+  color: #fff;
+  background-color: #562b2b;
+}
+#footer .title {
+  padding-bottom: 100px;
+  font-size: 20px;
+  color: #fff;
 }
 #footer .center {
   width: 80%;
