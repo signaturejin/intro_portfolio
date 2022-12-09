@@ -184,9 +184,28 @@
                 display: flex; padding-bottom: 55px;
                 border-bottom: 1px solid #e05e6f;
                 //기본사항
-                .info {width: 30%;}
+                .info {width: 35%;}
                 //나를 표현하는 문장
-                // .sentence {}
+                .sentence {
+                    position: relative;
+                    &::before {
+                        content: ""; display: block;
+                        width: 395px; height: 36px;
+                        position: absolute; left: -2px; top: -3px;
+                        background-color: #e05e6f;
+                        z-index: 1;
+                    }
+                    .t_text {
+                        font-size: 26px; font-weight: 700;
+                        color: #fff;
+                        z-index: 2; position: relative;
+                        margin-bottom: 18px;
+                    }
+                    .b_text {
+                        font-size: 14px; font-weight: 500;
+                        line-height: 24px;
+                    }
+                }
             }
             .bottom {
                 display: flex;
